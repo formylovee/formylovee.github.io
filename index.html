@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport tag -->
+    <title>Erna Birthday 💖</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url("digital-7_mono.ttf") format("truetype");
+        }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <span class="comments">/**</span><br />
+                <span class="space" /><span class="comments">*FROM initial i</span><br />
+                <span class="space" /><span class="comments">**/</span><br /> <br>
+                Hallo Ernaa, It's Your Birthday! 🥳🎉<br /> <br>
+                
+                <span class="comments">// This is a special day for you</span><br />
+                Di hari istimewa ini, aku ingin mengungkapkan betapa berartinya kamu bagiku.
+                <br> Kehadiranmu dalam hidupku adalah anugerah yang tidak bisa diukur dengan kata-kata.
+                <br> Kamu tuh sebenarnya membawa kebahagiaan dan makna dalam setiap prosesku yang. Aku ingin ngucapin Semoga di ulang tahun ini, Tuhan selalu memberikanmu kesehatan, kedamaian, dan keberkahan dalam setiap langkahmu dan segala kebahagiaan yang kamu impikan dapat terwujud, tetapi tidak hanya itu yang aku ingin katakan kepadamu.
+                <br> <br>
+                
+                <span class="comments">// Your face, your voice, your smile.</span><br /> Semua itu adalah anugerah dari Tuhan yang membuat hatiku berdebar setiap kali melihat pesonamu dan senyummu. Dalam momen-momen seperti itu, aku terinspirasi menciptakan sebuah lagu berjudul "Kisahku," yang menceritakan semua perasaanku terhadapmu.<br> Kamu memiliki cara unik untuk membuat segala sesuatu terasa lebih ceria dan penuh makna.<br> Setiap kali aku melihat senyummu, aku melihat bintang yang bersinar di langit, membawa kedamaian dan kebahagiaan. <br> Tatapan matamu mampu menghangatkan hatiku, membuatku lupa sejenak pada dunia. <br> <br>
+
+                <span class="comments">// This is a sentence that I really want to say to you.</span><br /> Sayang, kamu adalah bintang terang dalam hidupku.<br> Dengan segala kekurangan dan kelebihanmu yang aku benar-benar terima sepenuhnya, ini bukan soal paras. Ini adalah tentang komitmen dan ketulusan dari hati yang terdalam. <br> Setiap kali aku mengobrol denganmu, rasanya seperti menjalani petualangan yang penuh warna.<br> Di hari spesial ini, aku ingin kamu tahu bahwa aku akan selalu terbuka untukmu, dalam keadaan apapun.<br>
+
+                Aku berharap kita saling mendukung untuk mencapai impian kita. Kamu layak mendapatkan kebahagiaan dalam bentuk apapun yang kamu inginkan, dan aku akan selalu berusaha dengan segenap hatiku untuk membuatmu merasa nyaman dan dihargai.<br>
+                <br>
+
+                <div style="left: 0; width: 100%; height: 80px; position: relative;"><iframe src="https://open.spotify.com/embed/track/5NF5TV9zGZ9QLKLf7Oq05T?utm_source=oembed" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture;"></iframe></div>
+                <br>
+                <br>
+                Baby, I will love you forever 💖 -initial i
+
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        वर्षा ऋतु FOREVER
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        I LOVE YOU SO MUCH<br />
+                        <div class="signature">- RITVIK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var together = new Date();
+        together.setFullYear(2016, 8, 5);
+        together.setHours(16);
+        together.setMinutes(30);
+        together.setSeconds(0);
+        together.setMilliseconds(0);
+
+        if (!document.createElement("canvas").getContext) {
+            var msg = document.createElement("div");
+            msg.id = "errorMsg";
+            msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+            document.body.appendChild(msg);
+            $("#code").css("display", "none");
+            $("#copyright").css("position", "absolute");
+            $("#copyright").css("bottom", "10px");
+            document.execCommand("stop");
+        } else {
+            // setTimeout(function () {
+            //     startHeartAnimation();
+            // }, 5000);
+
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
+
+            adjustCodePosition();
+            $("#code").typewriter();
+        }
+    </script>
+</body>
+</html>
