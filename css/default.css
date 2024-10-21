@@ -79,6 +79,7 @@
     font-size: 1em; /* Use relative units */
     margin-top: 20px!important; /* Set a positive margin */
     padding-top: 10px; /* Optional: Add some padding to give it space */
+    padding-right: 10px;
 }
 
 
