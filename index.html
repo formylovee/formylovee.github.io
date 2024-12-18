@@ -91,6 +91,10 @@
   </div>
 
   <script>
+    document.addEventListener('contextmenu', function(event) {
+      event.preventDefault(); // This disables the right-click menu
+    });
+
     if (/Mobi|Android/i.test(navigator.userAgent)) {
       var script = document.createElement('script');
       script.src = './mobile.js';
