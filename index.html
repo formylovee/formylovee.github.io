@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>For my love❤️</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -17,66 +17,76 @@
   <div class="paper heart">
   </div>
 
-<audio id="backgroundMusic" src="./sounds/penjaga_hati.mp3" preload="auto" loop></audio>
+  <audio id="backgroundMusic" src="./sounds/penjaga_hati.mp3" preload="auto" loop></audio>
 
-<div class="paper image">
+  <div class="paper image">
     <p>Love with You 😍 </p>
-   <img src="images/us.jpg" />
-</div>
+    <img src="images/us.jpg" />
+  </div>
 
-<div class="paper image">
-  <p class="p1" style="margin-left: 70px;">🌧️</p>
-  <img src="images/hujan.jpg" />
-</div>
+  <div class="paper image">
+    <p class="p1" style="margin-left: 70px;">🌧️</p>
+    <img src="images/hujan.jpg" />
+  </div>
 
+  <div class="paper image">
+    <p class="p1" style="margin-left: 70px;">🎂🎉</p>
+    <img src="images/1.png" />
+  </div>
 
-<div class="paper image">
-  <p class="p1" style="margin-left: 70px;">🎂🎉</p>
-  <img src="images/1.png" />
-</div>
+  <div class="paper image">
+    <p class="p1" style="margin-left: 20px;">😊👍</p>
+    <img src="images/work1.jpg" />
+  </div>
 
-<div class="paper image">
-  <p class="p1" style="margin-left: 20px;">😊👍</p>
-  <img src="images/work1.jpg" />
-</div>
+  <div class="paper image">
+    <p class="p1">the best girl</p>
+    <img src="images/work2.jpg" />
+  </div>
 
-<div class="paper image">
-  <p class="p1">the best girl</p>
-  <img src="images/work2.jpg" />
-</div>
+  <div class="paper image">
+    <p>How can be </p>
+    <p> someone so cute ❤️ </p>
 
-<div class="paper image">
-  <p>How can be </p>
-   <p> someone so cute ❤️ </p>
+    <img src="images/cute.jpg" />
+  </div>
 
-  <img src="images/cute.jpg" />
-</div>
-
-<div class="paper">
-  <p class="p1">waktu yang sempurna untuk mengingat</p>
+  <div class="paper">
+    <p class="p1">waktu yang sempurna untuk mengingat</p>
     <p class="p1">semua kenangan yang kita jalani bersama.<span style="color: red !important;">❤️</span></p>
-</div>
+  </div>
 
-<div class="paper red">
-<p class="p1"> You are my Favorite</p>
-<p class="p2">Person 😍</p>
-</div>
+  <div class="paper red">
+    <p class="p1"> You are my Favorite</p>
+    <p class="p2">Person 😍</p>
+  </div>
 
-<div class="paper">
-  <p class="p1">You are beautiful </p>
+  <div class="paper">
+    <p class="p1">You are beautiful </p>
     <p class="p1">Amazing <span style="color: red !important;">❤️</span></p>
   </div>
 
-<div class="paper">
-<p class="p1">Heii!,Kamu itu wanita hebat yang aku kenal </p>
-  <p class="p1">aku kagum banget sama kamu <span style="color: red !important;">❤️</span></p>
-</div>
+  <div class="paper">
+    <p class="p1">Heii!,Kamu itu wanita hebat yang aku kenal </p>
+    <p class="p1">aku kagum banget sama kamu <span style="color: red !important;">❤️</span></p>
+  </div>
 
-<div class="paper">
-<p class="p1">Drag the papers to move!</p>
-</div>
-<!-- partial -->
-  <script  src="./mobile.js"></script>
+  <div class="paper">
+    <p class="p1">Drag the papers to move!</p>
+  </div>
+
+  <script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      var script = document.createElement('script');
+      script.src = './mobile.js';
+      document.head.appendChild(script);
+    } else {
+      var script = document.createElement('script');
+      script.src = './script.js';
+      document.head.appendChild(script);
+    }
+  </script>
+
   <script src="./loading.js"></script>
 </body>
 </html>
