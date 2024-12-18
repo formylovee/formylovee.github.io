@@ -17,7 +17,7 @@
   color: #ff5252;
   z-index: 9999;
   opacity: 1; /* Fully visible */
-  transition: opacity 1s ease; /* Add transition effect */
+  transition: opacity 1s ease-in-out; /* Add transition effect */
 }
 
 #loading {
@@ -39,6 +39,7 @@ body {
   /* background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg"); */
   background-image: url("https://imgs.search.brave.com/PbfnVXWSbM6sIwNjM9wD6Ai0vAEoVk2vxOBDGolxHZc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzY5LzUzLzE4/LzM2MF9GXzg2OTUz/MTgwN184UWVscHNu/TDZNTHJJSUhjak10/QXhYVXA4bDBZMGtL/bS5qcGc");
   background-position: center center;
+  transition: background-image 1s ease-in-out;
 }
 
 .paper {
@@ -53,6 +54,7 @@ body {
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
   
   position: absolute;
+  transition: transform 0.03s ease-in-out;
 }
 
 .paper.heart {
@@ -74,6 +76,7 @@ img {
   max-height: 200px;
   width: 100%;
   user-select: none;
+  transition: transform 0.3s ease-in-out;
 }
 
 .paper.heart::after {
@@ -88,6 +91,7 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
+  transition: transform 0.3s ease-in-out;
 }
 
 @keyframes shake {
@@ -108,6 +112,23 @@ img {
   }
 }
 
+@keyframes moveHands {
+  0% {
+    transform: translateX(0); /* Initial position */
+  }
+  25% {
+    transform: translateX(10px); /* Move right */
+  }
+  50% {
+    transform: translateX(0); /* Return to initial position */
+  }
+  75% {
+    transform: translateX(-10px); /* Move left */
+  }
+  100% {
+    transform: translateX(0); /* Return to initial position */
+  }
+}
 
 /* Apply shake effect on hover and active state */
 .paper.heart:hover::after,
@@ -124,4 +145,12 @@ p {
   user-select: none;
   
   filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  transition: transform 0.3s ease-in-out;
+}
+
+.hand-shake {
+  font-size: 50px;
+  display: inline-block;
+  animation: moveHands 1s infinite ease-in-out; /* Animation applied */
+  user-select: none; /* Prevent selection */
 }
