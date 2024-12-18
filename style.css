@@ -78,6 +78,10 @@ img {
   width: 100%;
   user-select: none;
   transition: transform 0.3s ease-in-out;
+  -webkit-user-drag: none; 
+  -moz-user-drag: none;    
+  -o-user-drag: none;      
+  user-drag: none;
 }
 
 .paper.heart::after {
