@@ -29,8 +29,6 @@
   opacity: 0;
 }
 
-
-
 body {
   height: 100vh;
   display: flex;
@@ -90,6 +88,32 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
+}
+
+@keyframes shake {
+  0% { 
+    transform: translateX(0) rotate(0deg); /* No movement and no tilt */
+  }
+  25% { 
+    transform: translateX(-10px) rotate(-5deg); /* Move left and tilt left */
+  }
+  50% { 
+    transform: translateX(10px) rotate(5deg); /* Move right and tilt right */
+  }
+  75% { 
+    transform: translateX(-10px) rotate(-5deg); /* Move left and tilt left */
+  }
+  100% { 
+    transform: translateX(0) rotate(0deg); /* Return to the original position and rotation */
+  }
+}
+
+
+/* Apply shake effect on hover and active state */
+.paper.heart:hover::after,
+.paper.heart:active::after {
+  animation: shake 0.2s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 p {
