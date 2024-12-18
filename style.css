@@ -40,6 +40,7 @@ body {
   background-image: url("https://imgs.search.brave.com/PbfnVXWSbM6sIwNjM9wD6Ai0vAEoVk2vxOBDGolxHZc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzY5LzUzLzE4/LzM2MF9GXzg2OTUz/MTgwN184UWVscHNu/TDZNTHJJSUhjak10/QXhYVXA4bDBZMGtL/bS5qcGc");
   background-position: center center;
   transition: background-image 1s ease-in-out;
+  overflow: hidden;
 }
 
 .paper {
